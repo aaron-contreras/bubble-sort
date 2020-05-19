@@ -10,6 +10,7 @@
 4. What needs to happen to go from the input to the desired output?
   - Constraints
     - Use the bubble sort methodology
+  - Bubble sort "bubbles" the largest element in an array to the end after each pass, so there's no need to check against it on the next pass, it will already be sorted.
   - Algorithm
     ```
     # Initialize a variable to determine if the array is sorted.
