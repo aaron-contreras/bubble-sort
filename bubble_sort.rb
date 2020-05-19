@@ -1,3 +1,9 @@
+def swap(array, index_a, index_b)
+  a_temp = array[index_a]
+  array[index_a] = array[index_b]
+  array[index_b] = a_temp
+end
+
 def bubble_sort(array)
   sorted = false
   sorting_range = array.length - 2
@@ -5,9 +11,7 @@ def bubble_sort(array)
     sorted = true
     0.upto(sorting_range) do |index|
       if array[index] > array[index + 1]
-        next_index = array[index + 1]
-        array[index + 1] = array[index]
-        array[index] = next_index 
+        swap(array, index, index + 1)
         sorted = false 
       end
     end
